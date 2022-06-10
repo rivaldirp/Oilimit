@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/etRegisterNohp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. Handphone"
+        android:drawableStart="@drawable/ic_baseline_local_phone_24"
+        android:drawablePadding="24dp"/>
+
+    <EditText
+        android:id="@+id/etRegisterName"
+        android:layout_below="@+id/etRegisterNohp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Nama Lengkap"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="24dp"/>
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_below="@+id/etRegisterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="24dp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_below="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"/>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_below="@id/btnRegister"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sudah memiliki akun"/>
+
+</RelativeLayout>

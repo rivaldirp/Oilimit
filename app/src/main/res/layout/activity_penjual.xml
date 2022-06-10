@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".PenjualActivity">
+
+    <TextView
+        android:id="@+id/tvIdentitas"
+        android:layout_marginTop="45dp"
+        android:textSize="28sp"
+        android:textColor="#FFC107"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAMA" />
+
+    <TextView
+        android:id="@+id/tvData"
+        android:textSize="19sp"
+        android:layout_below="@id/tvIdentitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cariData" />
+
+    <TextView
+        android:id="@+id/tvSisa"
+        android:layout_marginTop="45dp"
+        android:textSize="28sp"
+        android:textColor="#FFC107"
+        android:textStyle="bold"
+        android:layout_below="@id/tvData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SISA PEMBELIAN" />
+
+    <TextView
+        android:id="@+id/tvLiter"
+        android:textSize="19sp"
+        android:layout_below="@id/tvSisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/tvSatuan"
+        android:textSize="19sp"
+        android:layout_below="@id/tvSisa"
+        android:layout_toRightOf="@id/tvLiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Liter" />
+
+    <EditText
+        android:id="@+id/etAdmin"
+        android:layout_below="@+id/tvSatuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="217dp"
+        android:hint="Pin Admin"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="24dp"/>
+
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_below="@+id/etAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masuk Mode Admin"/>
+
+</RelativeLayout>

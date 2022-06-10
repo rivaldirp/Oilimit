@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".AdminActivity">
+
+    <TextView
+        android:id="@+id/tvAdminNama"
+        android:layout_marginTop="45dp"
+        android:textSize="28sp"
+        android:textColor="#FFC107"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAMA" />
+
+    <TextView
+        android:id="@+id/tvAdminData"
+        android:textSize="19sp"
+        android:layout_below="@id/tvAdminNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cariData" />
+
+    <TextView
+        android:id="@+id/tvAdminSisa"
+        android:layout_marginTop="45dp"
+        android:textSize="28sp"
+        android:textColor="#FFC107"
+        android:textStyle="bold"
+        android:layout_below="@id/tvAdminData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SISA PEMBELIAN" />
+
+    <EditText
+        android:id="@+id/etAdminLiter"
+        android:textSize="19sp"
+        android:layout_below="@id/tvAdminSisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/tvAdminSatuan"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvAdminSisa"
+        android:layout_toRightOf="@id/etAdminLiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Liter" />
+
+    <Button
+        android:id="@+id/btnAdminUpdate"
+        android:layout_below="@+id/etAdminLiter"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Data"/>
+
+</RelativeLayout>

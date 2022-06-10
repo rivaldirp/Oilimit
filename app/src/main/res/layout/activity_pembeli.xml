@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".PembeliActivity">
+
+    <TextView
+        android:id="@+id/tvPembeli"
+        android:layout_marginTop="45dp"
+        android:textSize="28sp"
+        android:textColor="#FFC107"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAMA" />
+
+    <TextView
+        android:id="@+id/tvJeneng"
+        android:textSize="19sp"
+        android:layout_below="@id/tvPembeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cariData" />
+
+    <TextView
+        android:id="@+id/tvSp"
+        android:layout_marginTop="10dp"
+        android:textSize="28sp"
+        android:textColor="#FFC107"
+        android:textStyle="bold"
+        android:layout_below="@id/tvJeneng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SISA PEMBELIAN" />
+
+    <TextView
+        android:id="@+id/tvLim"
+        android:textSize="19sp"
+        android:layout_below="@id/tvSp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/tvL"
+        android:textSize="19sp"
+        android:layout_below="@id/tvSp"
+        android:layout_toRightOf="@id/tvLim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Liter" />
+
+    <ImageView
+        android:id="@+id/ivQr"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvL"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+
+</RelativeLayout>
